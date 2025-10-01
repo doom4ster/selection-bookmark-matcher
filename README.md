@@ -7,7 +7,8 @@
 
 <!-- Badges (可自行替換) -->
 <img alt="status" src="https://img.shields.io/badge/status-experimental-orange" />
-<img alt="license" src="https://img.shields.io/badge/license-TBD-lightgrey" />
+<img alt="version" src="https://img.shields.io/badge/version-0.1.0-blueviolet" />
+<img alt="license" src="https://img.shields.io/badge/license-MIT-blue" />
 
 </div>
 
@@ -119,7 +120,7 @@ cd dist/mv3 && zip -r ../../selection-bookmark-matcher-mv3.zip . && cd -
 （可日後改成 `npm run release`）
 
 ## ⚖️ 授權 (License)
-尚未指定。建議：MIT / Apache-2.0。若未指定即視為保留所有權利。
+本專案採用 MIT 授權，詳見 LICENSE 檔。
 
 ## ❓ 常見問題 (FAQ)
 **Q:** 為什麼 MV3 在 Firefox 無法載入？  
