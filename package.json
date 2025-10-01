@@ -1,0 +1,10 @@
+{
+  "name": "selection-bookmark-matcher",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:mv3": "node scripts/build.js mv3",
+    "build:mv2": "node scripts/build.js mv2",
+    "build": "node scripts/build.js mv3"
+  }
+}

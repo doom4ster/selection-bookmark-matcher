@@ -1,0 +1,56 @@
+/* CSS for the selection bookmark matcher panel */
+#__selectionBookmarkMatcherPanel {
+	position: absolute;
+	z-index: 999999;
+	font-size: 13px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+	background: rgba(32,32,40,0.92);
+	color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+	padding: 8px 10px;
+	max-width: 280px;
+	line-height: 1.35;
+	backdrop-filter: blur(4px);
+	border: 1px solid rgba(255,255,255,0.12);
+	opacity: 0;
+	transform: translateY(-4px);
+	transition: opacity .18s ease, transform .18s ease;
+	pointer-events: none;
+}
+#__selectionBookmarkMatcherPanel.visible {
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
+}
+#__selectionBookmarkMatcherPanel .sbm-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+#__selectionBookmarkMatcherPanel .sbm-status {
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	color: #9dd4ff;
+}
+#__selectionBookmarkMatcherPanel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-height: 200px;
+	overflow-y: auto;
+}
+#__selectionBookmarkMatcherPanel li {
+	margin: 2px 0;
+	font-size: 13px;
+	line-height: 1.3;
+}
+#__selectionBookmarkMatcherPanel a {
+	color: #ffd27f;
+	text-decoration: none;
+}
+#__selectionBookmarkMatcherPanel a:hover {
+	text-decoration: underline;
+}

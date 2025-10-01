@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Selection Bookmark Matcher",
+  "description": "選取文字時自動搜尋是否有相同標題的書籤，並顯示結果。",
+  "version": "0.1.0",
+  "permissions": [
+    "bookmarks",
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["panel.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "action": {
+    "default_title": "Selection Bookmark Matcher"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "selection-bookmark-matcher@example.com"
+    }
+  }
+}
